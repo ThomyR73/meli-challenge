@@ -1,0 +1,84 @@
+@import "/src/styles/theme.module.scss";
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    background-color: $yellow;
+
+    @media (min-width:800px) {
+        padding: 10px 0;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    @media (min-width:800px) {
+        width: 70%;
+        flex-grow: 0;
+        gap: 20px;
+        min-width: 700px;
+        max-width: 1250px;
+
+    }
+}
+
+.logo {
+    img {
+        height: 35px;
+
+        @media (min-width:800px) {
+            content: url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.111/mercadolibre/logo_large_25years_v2.png");
+            height: auto
+        }
+    }
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.searchInput {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.divider {
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: grey;
+    opacity: .3;
+}
+
+.searchButton {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: none;
+
+    svg {
+        margin-top: 4px
+    }
+}

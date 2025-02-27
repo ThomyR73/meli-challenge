@@ -1,0 +1,46 @@
+@import "/src/styles/theme.module.scss";
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: $dark-grey;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 1px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+    @media(min-width: 800px) {
+        margin-left: initial;
+        font-size: 14px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        bottom: 10px;
+        list-style: none;
+        margin: 0px 5px 0 0px;
+
+        &:not(:last-of-type) {
+            @media (min-width: 800px) {
+                margin-bottom: 0px;
+            }
+
+            span {
+                display: inline-block;
+                margin-bottom: -5px;
+            }
+        }
+
+        &:last-of-type {
+            span {
+                display: none;
+            }
+        }
+    }
+}

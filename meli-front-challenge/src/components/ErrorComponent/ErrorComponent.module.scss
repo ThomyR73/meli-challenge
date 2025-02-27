@@ -1,0 +1,19 @@
+@import "/src/styles/theme.module.scss";
+
+.notFound {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p{
+        margin: 20px 0;
+        color: $dark-grey;
+        padding: 0 10px;
+    }
+    a{
+        text-decoration: none;
+        color: $dark-grey;
+    }
+  }

@@ -1,0 +1,89 @@
+@import "/src/styles/theme.module.scss";
+
+.link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+    width: 100%;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 5px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.image {
+    min-width: 150px;
+    max-width: 150px;
+    margin-right: 10px;
+
+    @media (min-width: 800px) {
+        min-width: 200px;
+        max-width: 200px;
+        margin-right: 20px;
+    }
+
+    img {
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+
+        @media (min-width: 800px) {
+            height: 200px;
+        }
+    }
+}
+
+.title {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 200;
+
+    @media (min-width: 800px) {
+        margin-top: 12px;
+        font-size: 22px;
+    }
+}
+
+.price {
+    margin-top: 6px;
+    font-size: 16px;
+    color: black;
+
+    @media(min-width: 800px) {
+        margin-top: 12px;
+        font-size: 24px;
+    }
+}
+
+.shipping {
+    display: block;
+    margin-top: 6px;
+    color: $green;
+    font-size: 14px;
+    font-weight: 500;
+
+    @media(min-width: 800px) {
+        margin-top: 12px;
+    }
+}
+
+.condition {
+    display: block;
+    margin-top: 6px;
+    color: $dark-grey;
+    font-size: 14px;
+    font-weight: 300;
+
+    @media(min-width: 800px) {
+        margin-top: 12px;
+    }
+}
